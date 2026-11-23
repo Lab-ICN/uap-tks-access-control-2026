@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ladesh Gamink 😹😹😹</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="/">Robin<span>Tech</span><small> / SECURITY LAB</small></a>
+        <div class="nav-right">
+          <button type="button" id="themeToggle" aria-label="Toggle theme">☾</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="intro">
+        <p class="eyebrow">Goodluck 😊</p>
+        <h1>Operasi Pembobolan 😹😹😹</h1>
+        <p class="lede">
+          Seorang intruder bernama <strong>Ladesh</strong> meninggalkan jejak
+          kegagalan access-control di RobinTech. Ikuti evidence,
+          investigasi setiap incident, dan amankan sistem.
+        </p>
+        <div class="progress-line">
+          <span>Progress investigasi <strong id="count">0/5</strong></span>
+          <span id="percent">0%</span>
+        </div>
+        <div class="track" aria-label="Progress investigasi">
+          <div id="bar"></div>
+        </div>
+      </section>
+
+      <div id="mainContent">
+        <section class="panel challenge">
+          <div class="case-top">
+            <span class="eyebrow" id="caseNumber">CASE 01 / 05</span>
+            <div class="tags">
+              <span id="category">DAC</span>
+            </div>
+          </div>
+          <h2 id="title">Memuat incident...</h2>
+          <p id="story" class="story"></p>
+          <div class="objective">
+            <strong>TANTANGAN</strong>
+            <p id="question"></p>
+          </div>
+          <details>
+            <summary>Need Hint?</summary>
+            <p id="hint"></p>
+          </details>
+        </section>
+
+        <section class="panel terminal">
+          <div class="terminal-title">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <strong>Forensic terminal</strong>
+            <small>🗿🗿🗿</small>
+          </div>
+          <div id="termOutput" class="term-output" aria-live="polite"></div>
+          <form id="terminalForm" class="terminal-form">
+            <label for="command">$</label>
+            <input
+              id="command"
+              autocomplete="off"
+              spellcheck="false"
+              aria-label="Terminal command"
+              placeholder="Masukkan command (coba help)"
+            >
+            <button type="submit">Jalankan</button>
+          </form>
+        </section>
+
+        <section class="panel submit-panel">
+          <div>
+            <h3>Kirim temuan Anda</h3>
+            <p>Jawaban yang salah membuat Anda tetap pada incident ini.</p>
+          </div>
+          <form id="answerForm">
+            <label class="visually-hidden" for="answer">Your answer</label>
+            <input
+              id="answer"
+              autocomplete="off"
+              required
+              maxlength="300"
+              placeholder="Jawaban Anda"
+            >
+            <button type="submit">Kirim</button>
+          </form>
+          <p id="feedback" class="feedback" role="status"></p>
+        </section>
+      </div>
+
+      <section id="success" class="panel success" hidden>
+        <span class="eyebrow">SEMUA 5 INCIDENT SELESAI</span>
+        <h2>Investigasi selesai.</h2>
+        <p>Anda telah melacak aktivitas Ladesh dan menyelesaikan incident access-control.</p>
+        <pre id="flag" class="flag"></pre>
+        <button id="copyFlag" type="button">Salin flag</button>
+      </section>
+    </main>
+
+    <footer class="wrap">
+      Soal Modul Access Control yang telah diapa-apakan 😁
+    </footer>
+    <script id="ctf-config" type="application/json">{{ {"csrf": csrf}|tojson }}</script>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
