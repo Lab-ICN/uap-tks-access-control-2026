@@ -21,14 +21,6 @@ Open http://localhost:8080. Compose binds only to localhost by default; change p
 - The terminal uses an in-memory fictional filesystem. **No user input is passed to a real shell**; filesystem and sudo rules are simulated and read-only.
 - To customize cases, see `CASES` in `app.py`. `answers` are server-side only; the API does not expose them.
 
-## Organizer answer key — do not distribute to participants
-
-1. The Phantom Reader — `deploy|600`
-2. The Invisible Barrier — `chmod g+x /srv/robintech/reviews/2026`
-3. The Complain Mode Decoy — `/usr/local/bin/logsync|complain|enforce`
-4. The Auditor Escape Hatch — `/usr/bin/vim|/etc/sudoers.d/robintech-audit`
-5. Ladesh: The Final Trace — `600|enforce|python3`
-
 ## Deployment notes
 
 The app has no account registration, per-user authentication, rate limiting or scoreboard. For a real competitive event, add authentication and rate limiting, configure HTTPS and secure cookies, and use a secret `FINAL_FLAG`. The app is suitable for a classroom demonstration or isolated lab as shipped. AppArmor rules are *evidence*, not actual kernel-enforced AppArmor policies.
